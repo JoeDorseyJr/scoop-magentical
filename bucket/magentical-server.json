@@ -1,0 +1,28 @@
+{
+  "version": "0.11.0",
+  "description": "Magentical AI daemon — connects your Android phone to Kiro on your laptop",
+  "homepage": "https://github.com/JoeDorseyJr/magentical",
+  "license": "Proprietary",
+  "url": [
+    "https://github.com/JoeDorseyJr/magentical/releases/download/v0.11.0/magentical-server.exe",
+    "https://github.com/JoeDorseyJr/magentical/releases/download/v0.11.0/install-server-windows.ps1"
+  ],
+  "hash": [
+    "sha256:PLACEHOLDER_EXE_HASH",
+    "sha256:PLACEHOLDER_PS1_HASH"
+  ],
+  "suggest": {
+    "nssm": "nssm"
+  },
+  "installer": {
+    "script": [
+      "Write-Host ''",
+      "Write-Host 'Magentical Server installed to: $dir' -ForegroundColor Green",
+      "Write-Host ''",
+      "Write-Host 'To register as a Windows Service, run:' -ForegroundColor Cyan",
+      "Write-Host \"  powershell -ExecutionPolicy Bypass -File `\"$dir\\install-server-windows.ps1`\"\" -ForegroundColor Yellow",
+      "Write-Host ''"
+    ]
+  },
+  "notes": "Run install-server-windows.ps1 to register as a Windows Service.\nYou will be prompted for your Cloudflare Access credentials."
+}
