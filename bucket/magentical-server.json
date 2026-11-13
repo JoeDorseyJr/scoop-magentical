@@ -11,9 +11,6 @@
     "sha256:PLACEHOLDER_EXE_HASH",
     "sha256:PLACEHOLDER_PS1_HASH"
   ],
-  "suggest": {
-    "nssm": "nssm"
-  },
   "installer": {
     "script": [
       "Write-Host ''",
@@ -21,19 +18,16 @@
       "Write-Host '║   Magentical Server installed                        ✓  ║' -ForegroundColor Cyan",
       "Write-Host '╚══════════════════════════════════════════════════════════╝' -ForegroundColor Cyan",
       "Write-Host ''",
-      "Write-Host 'NEXT STEP — Register as a Windows Service:' -ForegroundColor Yellow",
+      "Write-Host 'NEXT STEP — Run the setup script (no admin required):' -ForegroundColor Yellow",
       "Write-Host ''",
       "Write-Host \"  powershell -ExecutionPolicy Bypass -File `\"$dir\\install-server-windows.ps1`\"\" -ForegroundColor Green",
       "Write-Host ''",
-      "Write-Host 'You will be prompted for:' -ForegroundColor White",
-      "Write-Host '  • Token ID      (from Joe)' -ForegroundColor Gray",
-      "Write-Host '  • Token Secret  (from Joe)' -ForegroundColor Gray",
-      "Write-Host '  • PROJECTS_ROOT (your code folder, e.g. C:\\Users\\you\\Projects)' -ForegroundColor Gray",
+      "Write-Host 'This registers a login startup task and launches the server.' -ForegroundColor White",
+      "Write-Host 'The pairing page will open in your browser — scan the QR code with the Magentical app.' -ForegroundColor White",
       "Write-Host ''",
-      "Write-Host 'After that, the Magentical icon appears in your notification area.' -ForegroundColor White",
-      "Write-Host 'Install the Android app from: https://github.com/JoeDorseyJr/magentical/releases/latest' -ForegroundColor White",
+      "Write-Host 'Get the Android app: https://github.com/JoeDorseyJr/magentical/releases/latest' -ForegroundColor White",
       "Write-Host ''"
     ]
   },
-  "notes": "Run install-server-windows.ps1 to register as a Windows Service.\nYou will be prompted for your Cloudflare Access credentials."
+  "notes": "Run install-server-windows.ps1 to set up the login startup task. No admin rights required."
 }
