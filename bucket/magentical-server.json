@@ -4,11 +4,11 @@
   "homepage": "https://github.com/JoeDorseyJr/magentical",
   "license": "Proprietary",
   "url": [
-    "https://github.com/JoeDorseyJr/magentical/releases/download/v0.11.1/magentical-server.exe",
-    "https://github.com/JoeDorseyJr/magentical/releases/download/v0.11.1/install-server-windows.ps1"
+    "https://github.com/JoeDorseyJr/magentical-releases/releases/download/v0.11.1/magentical-server.exe",
+    "https://github.com/JoeDorseyJr/magentical-releases/releases/download/v0.11.1/install-server-windows.ps1"
   ],
   "hash": [
-    "sha256:0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+    "sha256:00a5377d8ed5406d263e1b36546c61e51379b0a4372f202ae4eee5b29f8bf08b",
     "sha256:c6403844d002be4f030e19a069ad23dd8b21647c114e2053b3a019b2489dd997"
   ],
   "suggest": {
@@ -31,7 +31,7 @@
       "Write-Host '  • PROJECTS_ROOT (your code folder, e.g. C:\\Users\\you\\Projects)' -ForegroundColor Gray",
       "Write-Host ''",
       "Write-Host 'After that, the Magentical icon appears in your notification area.' -ForegroundColor White",
-      "Write-Host 'Install the Android app from: https://github.com/JoeDorseyJr/magentical/releases/latest' -ForegroundColor White",
+      "Write-Host 'Install the Android app from: https://github.com/JoeDorseyJr/magentical-releases/releases/latest' -ForegroundColor White",
       "Write-Host ''"
     ]
   },
